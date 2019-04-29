@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.DiagnosaFragment"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/diagnosa_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gejala"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/container_diagnosa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:paddingTop="16dp"
+        android:paddingBottom="50dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/et_diagnosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="top|left"
+            android:maxLength="1000"
+            android:hint="Tuliskan gejala yang anda alami"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            android:background="#F5F5F5"
+            android:textSize="14sp"
+            android:textCursorDrawable="@color/colorPrimary"/>
+        
+        <Button
+            android:id="@+id/btn_submit_diagnosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diagnosa"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_diagnosa"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_loading_diagnosa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Diagnosis of Your Health"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/orang"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Loading..."
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

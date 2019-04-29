@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00ACC1</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- On Board Indicator -->
+    <color name="indicator_focus">#00ACC1</color>
+    <color name="indicator_release">#4DD0E1</color>
+    
+    <!-- Bottom bar icon tint -->
+    <color name="icon_pressed">#f44336</color>
+    <color name="icon_not_pressed">#a7a7a7</color>
+
+    <!-- Drawable Radius -->
+    <color name="border_shadow">#E0E0E0</color>
+
+    <!-- Riwayat Icon -->
+    <color name="decease_weight_low">#43A047</color>
+    <color name="decease_weight_high">#DD2C00</color>
+
+</resources>

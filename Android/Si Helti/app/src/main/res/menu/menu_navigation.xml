@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_beranda"
+        android:title="Beranda"
+        android:icon="@drawable/icon_home"/>
+    <item
+        android:id="@+id/nav_news"
+        android:title="Berita"
+        android:icon="@drawable/icon_berita"/>
+    <item
+        android:id="@+id/nav_diagnosa"
+        android:title="Periksa"
+        android:icon="@drawable/icon_diagnosis"/>
+    <item
+        android:id="@+id/nav_hasil"
+        android:title="Hasil"
+        android:icon="@drawable/icon_riwayat"/>
+    <item
+        android:id="@+id/nav_akun"
+        android:title="Akun"
+        android:icon="@drawable/icon_akun"/>
+</menu>

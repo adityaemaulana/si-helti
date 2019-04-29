@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_riwayat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/iv_riwayat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_list_riwayat"/>
+
+            <LinearLayout
+                android:id="@+id/top_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_riwayat"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_judul_riwayat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="Riwayat Diagnosa Kamu"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_tanggal_riwayat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="2dp"
+                    android:textSize="11sp"
+                    android:text="Sabtu, 26 April 2019"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_deskripsi_riwayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Pada kali ini untuk kesehatan kamu dalam keadaan sehat. Diagnosa yang anda masukkan tidak menimbulkan penyakit apapun."
+                android:layout_marginBottom="4dp"
+                android:layout_below="@id/top_container"
+                android:layout_toRightOf="@id/iv_riwayat" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
